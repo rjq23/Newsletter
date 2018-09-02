@@ -1,0 +1,56 @@
+﻿@model Newsletter.Models.SubscriptionModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Newsletter Application</h1>
+    <p class="lead">Sign up to our newsletter today</p>
+</div>
+
+@using (Html.BeginForm("Subscribe", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        <div class="col-lg-4 col-lg-offset-4">
+            <h2>Subscribe here</h2>
+            <hr />
+
+            <div class="input-group">
+                @Html.Label("Email Address")
+                @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control" })
+            </div>
+            @Html.ValidationMessageFor(m => m.EmailAddress, "", new { @class = "text-danger" })
+
+            <div class="input-group">
+                @Html.Label("How did you hear about us?")
+                @Html.EnumDropDownListFor(m => m.MarketingSource, new { @class = "form-control" })
+            </div>
+
+            <div class="input-group">
+                @Html.Label("If other please specify")
+                @Html.TextBoxFor(m => m.Other, new { @class = "form-control" })
+            </div>
+
+            <div class="input-group">
+                @Html.Label("Reason for subscribing");
+                @Html.TextAreaFor(m => m.Reason, new { @class = "form-control" })
+            </div>
+
+            <button type="submit" class="glyphicon-envelope"> Subscribe</button>
+        </div>
+    </div>
+}
+@if (Model != null && Model.Subscribed)
+{
+    <div class="col-lg-4 col-lg-offset-4">
+        <h3>@Model.Message</h3>
+        <p1>If you wish to unsubscribe, click the button below</p1>
+    
+        @using (Html.BeginForm("Unsubscribe", "Home", Model, FormMethod.Post))
+        {
+            <div>
+                <button type="submit" class="glyphicon-remove-sign"> Unsubscribe</button>
+            </div>
+        }
+    </div>
+}

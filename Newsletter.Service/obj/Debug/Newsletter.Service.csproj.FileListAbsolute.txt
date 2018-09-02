@@ -1,0 +1,13 @@
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\bin\Newsletter.Service.dll.config
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\bin\Newsletter.Service.dll
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\bin\Newsletter.Service.pdb
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\bin\EntityFramework.dll
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\bin\EntityFramework.SqlServer.dll
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\bin\EntityFramework.xml
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\bin\EntityFramework.SqlServer.xml
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\obj\Debug\Newsletter.Service.Migrations.InitialCreate.resources
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\obj\Debug\Newsletter.Service.csproj.GenerateResource.cache
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\obj\Debug\Newsletter.Service.csproj.CoreCompileInputs.cache
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\obj\Debug\Newsletter.Service.csproj.CopyComplete
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\obj\Debug\Newsletter.Service.dll
+C:\Users\rory.quinn\source\repos\Newsletter\Newsletter.Service\obj\Debug\Newsletter.Service.pdb

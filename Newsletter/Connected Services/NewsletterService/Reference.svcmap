@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="584d8537-e364-45fc-b59c-6f5c2942e871" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61745/NewsletterService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NewsletterService.wsdl" MetadataType="Wsdl" ID="022b2c05-2c9f-40e8-b342-553ff1e6bea0" SourceId="1" SourceUrl="http://localhost:61745/NewsletterService.svc?wsdl" />
+    <MetadataFile FileName="NewsletterService.disco" MetadataType="Disco" ID="3c9892d0-ce10-4b7a-bfbc-b2338e487803" SourceId="1" SourceUrl="http://localhost:61745/NewsletterService.svc?disco" />
+    <MetadataFile FileName="NewsletterService.xsd" MetadataType="Schema" ID="5babff17-e7b3-4984-8b3c-f4574492262e" SourceId="1" SourceUrl="http://localhost:61745/NewsletterService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NewsletterService1.xsd" MetadataType="Schema" ID="4aa1e296-0bad-4ba9-a159-0c0334e87857" SourceId="1" SourceUrl="http://localhost:61745/NewsletterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NewsletterService2.xsd" MetadataType="Schema" ID="d384aa92-7b36-4cfc-b168-ba7795556f1d" SourceId="1" SourceUrl="http://localhost:61745/NewsletterService.svc?xsd=xsd3" />
+    <MetadataFile FileName="NewsletterService3.xsd" MetadataType="Schema" ID="005b2244-eaf0-49aa-ba00-576a3c70e360" SourceId="1" SourceUrl="http://localhost:61745/NewsletterService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
