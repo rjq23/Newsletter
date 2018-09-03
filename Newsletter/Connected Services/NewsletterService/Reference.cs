@@ -194,7 +194,7 @@ namespace Newsletter.NewsletterService {
         private string MessageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool ResultField;
+        private Newsletter.NewsletterService.StatusCode StatusField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Newsletter.NewsletterService.Subscription SubscriptionField;
@@ -226,14 +226,14 @@ namespace Newsletter.NewsletterService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool Result {
+        public Newsletter.NewsletterService.StatusCode Status {
             get {
-                return this.ResultField;
+                return this.StatusField;
             }
             set {
-                if ((this.ResultField.Equals(value) != true)) {
-                    this.ResultField = value;
-                    this.RaisePropertyChanged("Result");
+                if ((this.StatusField.Equals(value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
                 }
             }
         }
@@ -272,6 +272,29 @@ namespace Newsletter.NewsletterService {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
         }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="StatusCode", Namespace="http://schemas.datacontract.org/2004/07/Newsletter.Service.Messages")]
+    public enum StatusCode : int {
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        DatabaseError = 100,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        RecordNotFound = 101,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        InvalidData = 102,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Success = 200,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        AlreadySubscribed = 201,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        InternalError = 300,
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]

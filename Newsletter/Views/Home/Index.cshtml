@@ -32,7 +32,7 @@
             </div>
 
             <div class="input-group">
-                @Html.Label("Reason for subscribing");
+                @Html.Label("Reason for subscribing (optional)");
                 @Html.TextAreaFor(m => m.Reason, new { @class = "form-control" })
             </div>
 
@@ -40,16 +40,22 @@
         </div>
     </div>
 }
-@if (Model != null && Model.Subscribed)
+@if (Model != null && !string.IsNullOrEmpty(Model.Message))
 {
     <div class="col-lg-4 col-lg-offset-4">
         <h3>@Model.Message</h3>
+    </div>
+}
+
+@if (Model != null && Model.Subscribed)
+{
+    <div class="col-lg-4 col-lg-offset-4">
         <p1>If you wish to unsubscribe, click the button below</p1>
     
         @using (Html.BeginForm("Unsubscribe", "Home", Model, FormMethod.Post))
         {
             <div>
-                <button type="submit" class="glyphicon-remove-sign"> Unsubscribe</button>
+                <button type="submit"> Unsubscribe</button>
             </div>
         }
     </div>

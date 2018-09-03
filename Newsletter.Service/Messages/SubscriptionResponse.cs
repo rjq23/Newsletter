@@ -10,7 +10,17 @@ namespace Newsletter.Service.Messages
     {
         public Subscription Subscription { get; set; }
         public List<Subscription> Subscriptions { get; set; }
-        public bool Result { get; set; }
+        public StatusCode Status { get; set; }
         public string Message { get; set; }
+    }
+
+    public enum StatusCode
+    {
+        DatabaseError = 100,
+        RecordNotFound = 101,
+        InvalidData = 102,
+        Success = 200,
+        AlreadySubscribed = 201,
+        InternalError = 300
     }
 }

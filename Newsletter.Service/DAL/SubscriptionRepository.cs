@@ -44,21 +44,5 @@ namespace Newsletter.Service.DAL
             context.SaveChanges();
         }
 
-        public void UpdateSubscription(Subscription subscription)
-        {
-            var query = from updateSubscription in context.Subscriptions
-                        where updateSubscription.EmailAddress.Equals(subscription.EmailAddress)
-                        select updateSubscription;
-
-            Subscription s = query.First();
-            s.EmailAddress = subscription.EmailAddress;
-            s.MarketingSource = subscription.MarketingSource;
-            s.Other = subscription.Other;
-            s.Reason = subscription.Reason;
-            s.SubscriptionDate = subscription.SubscriptionDate;
-
-            context.SaveChanges();
-        }
-
     }
 }

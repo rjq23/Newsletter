@@ -13,7 +13,6 @@ namespace Newsletter.Service.DAL
         Subscription GetSubscriptionByEmail(string emailAddress);
         void AddSubscription(Subscription subscription);
         void DeleteSubscription(Subscription subscription);
-        void UpdateSubscription(Subscription subscription);
 
     }
 }

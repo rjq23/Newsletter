@@ -14,7 +14,7 @@ namespace Newsletter.Service.DAL
 
         }
 
-        public DbSet<Subscription> Subscriptions { get; set; }
+        public virtual DbSet<Subscription> Subscriptions { get; set; }
 
     }
 }
